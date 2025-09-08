@@ -35,6 +35,15 @@ func main() {
 		}
 	}
 	fmt.Println(s)
-		
-	}
+	var x int // 声明一个int类型的变量x
+	x = 100
+	
+	var p *int // 声明一个指向int的指针变量p
+	p = &x     // 取x的内存地址，赋给指针变量p
+	fmt.Println(p)
+	v := *p    // 取值，访问p指向的地址中的值，即100
+	fmt.Println(v)
+	w := &p
+	fmt.Println(w)
+	}   
 
